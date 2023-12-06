@@ -40,24 +40,24 @@ namespace PoS_Inventory
             txtQuantity.Text = "0";
         }
 
-        private void txtQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if ((e.KeyChar==13)&&(txtQuantity.Text != String.Empty))
-            {
-                cn.Open();
-                cm = new SqlCommand("INSERT INTO tblCarts (transNo, pcode, price, qty, sdate) VALUES (@transNo, @pcode, @price, @qty, @sdate)", cn);
-                cm.Parameters.AddWithValue("@transNo", transno);
-                cm.Parameters.AddWithValue("@pcode", pcode);
-                cm.Parameters.AddWithValue("@price", price);
-                cm.Parameters.AddWithValue("@qty", int.Parse(txtQuantity.Text));
-                cm.Parameters.AddWithValue("@sdate", DateTime.Now);
-                cm.ExecuteNonQuery();
-                cn.Close();
-                frmpos.txtSearch.Focus();
-                frmpos.txtSearch.Clear();
-                frmpos.LoadCart();
-                this.Dispose();
-            }
+            cn.Open();
+            string sql = $"INSERT INTO tblCarts_for_{transno}(transNum, pcode, price, qty, sdate, total) VALUES (@transNo, @pcode, @price, @qty, @sdate, @total)";
+            cm = new SqlCommand(sql, cn);
+            double total = double.Parse(txtQuantity.Text) * price;
+            cm.Parameters.AddWithValue("@total", total);
+            cm.Parameters.AddWithValue("@transNo", transno);
+            cm.Parameters.AddWithValue("@pcode", pcode);
+            cm.Parameters.AddWithValue("@price", price);
+            cm.Parameters.AddWithValue("@qty", int.Parse(txtQuantity.Text));
+            cm.Parameters.AddWithValue("@sdate", DateTime.Now);
+            cm.ExecuteNonQuery();
+            cn.Close();
+            frmpos.txtSearch.Focus();
+            frmpos.txtSearch.Clear();
+            frmpos.LoadCart();
+            this.Dispose();
         }
     }
 }

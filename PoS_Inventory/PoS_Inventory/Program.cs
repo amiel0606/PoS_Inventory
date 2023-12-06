@@ -16,7 +16,7 @@ namespace PoS_Inventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_Menu());
+            Application.Run(new frmLogin());
         }
     }
 }

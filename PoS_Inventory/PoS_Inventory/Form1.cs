@@ -16,6 +16,7 @@ namespace PoS_Inventory
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnection dbcon = new DBConnection();
+        public static string role;
         public frmLogin()
         {
             InitializeComponent();
@@ -34,10 +35,26 @@ namespace PoS_Inventory
                 dr.Read();
                 if (dr.HasRows)
                 {
-                    MessageBox.Show("Welcome " + dr["role"].ToString(), "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
-                    Main_Menu main = new Main_Menu();
-                    main.Show();
+                    if (dr["role"].ToString() == "Admin")
+                    {
+                        role = dr["role"].ToString();
+                        MessageBox.Show("Welcome " + role, "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        Main_Menu main = new Main_Menu(role);
+                        main.Show();
+                    }
+                    else if (dr["role"].ToString() == "Employee")
+                    {
+                        role = dr["role"].ToString();
+                        MessageBox.Show("Welcome " + role, "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        Main_Menu main = new Main_Menu(role);
+                        main.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else if (cmbRole.Text.Length == 0)
                 {

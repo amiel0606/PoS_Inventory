@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PoS_Inventory.exe" size="3501992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PoS_Inventory.exe" size="3526056">
       <assemblyIdentity name="PoS_Inventory" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8COhXTwSI4jMWUe4Pz3UETe2iZJ+n580S8MhjEKOrAY=</dsig:DigestValue>
+        <dsig:DigestValue>QmPpR99rLa43zAVA5d/exoOsO9pxJC+u3kQtcMMNviQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

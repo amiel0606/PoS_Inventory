@@ -18,6 +18,7 @@ namespace PoS_Inventory
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnection dbcon = new DBConnection();
+        public static string role;
         public Products()
         {
             InitializeComponent();
@@ -99,20 +100,23 @@ namespace PoS_Inventory
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Main_Menu main = new Main_Menu();
+            role = frmLogin.role;
+            Main_Menu main = new Main_Menu(role);
             main.Show();
             this.Hide();
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Main_Menu main = new Main_Menu();
+            role = frmLogin.role;
+            Main_Menu main = new Main_Menu(role);
             main.Show();
             this.Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Main_Menu main = new Main_Menu();
+            role = frmLogin.role;
+            Main_Menu main = new Main_Menu(role);
             main.Show();
             this.Dispose();
         }

@@ -46,3 +46,28 @@ C:\Users\jmgom\Downloads\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.app
 C:\Users\jmgom\Downloads\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.csproj.CopyComplete
 C:\Users\jmgom\Downloads\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.exe
 C:\Users\jmgom\Downloads\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.pdb
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\PoS_Inventory.exe.config
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\PoS_Inventory.exe.manifest
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\PoS_Inventory.application
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\PoS_Inventory.exe
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\PoS_Inventory.pdb
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\MetroFramework.Design.dll
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\MetroFramework.dll
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\bin\Debug\MetroFramework.Fonts.dll
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.csproj.AssemblyReference.cache
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.AddProducts.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.frmLogin.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.Main_Menu.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.PoS.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.PriceCheck.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.Products.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.Properties.Resources.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.Quantity.resources
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.csproj.GenerateResource.cache
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.csproj.CoreCompileInputs.cache
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.exe.manifest
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.application
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.csproj.CopyComplete
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.exe
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.pdb
+E:\Amiel\Github Repos\New folder\PoS_Inventory\PoS_Inventory\PoS_Inventory\obj\Debug\PoS_Inventory.Receipt.resources

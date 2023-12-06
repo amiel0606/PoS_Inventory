@@ -15,11 +15,23 @@ namespace PoS_Inventory
     {
         Products inv = new Products();
         PoS point_of_sales = new PoS();
+        public static string role;
 
-        public Main_Menu()
+        public Main_Menu(string role)
         {
             InitializeComponent();
-            Text = "";
+            if (role == "Admin")
+            {
+                lblRole.Text = "Administrator";
+                label1.Visible = true;
+                pictureBox2.Visible = true;
+            }
+            else if (role == "Employee")
+            {
+                lblRole.Text = "Employee";
+                label1.Visible = false;
+                pictureBox2.Visible = false;
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -54,7 +66,12 @@ namespace PoS_Inventory
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

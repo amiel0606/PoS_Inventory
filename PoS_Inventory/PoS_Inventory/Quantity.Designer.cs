@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtQuantity
@@ -41,13 +42,32 @@
             this.txtQuantity.Size = new System.Drawing.Size(293, 81);
             this.txtQuantity.TabIndex = 0;
             this.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(99, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 40);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Click";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Quantity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 84);
+            this.ClientSize = new System.Drawing.Size(293, 136);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtQuantity);
             this.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -65,5 +85,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.Button button1;
     }
 }
