@@ -391,4 +391,26 @@
         RK5CYII=
 </value>
   </data>
+  <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAThJREFUOE/V
+        lbENwkAMRVMgKiTqdFmAIqKkS4OEMkAWoIeCBWiZgI45GAGJASiZgQX4D9nIhIOkoeCkp3D297/DF45s
+        vqozjVKsxSbAvB2LOZ4z6iMMzM7iYk/nJq7iFGJ8JkYOPVRtQ1YjUYixkYuj2ImRxYDPxMih3wsWeJoy
+        2Dqrj0NwICjaeizktpZDwwIvpoyU4VB0GQ5t7qZ8yxmBbzuEZQuPD4KeFmGI17uhiRoRD8Qh1rS09Jf4
+        Z0MTxgN5HkxCRxyP74Z9odY8/tFQg75NxLQDNI9+aqQNjYPgRe0DWq97M2RnlUDIK8NvPLUzIIcGLTXU
+        Jg0Xghc0jz1Kgca01HQaFimTCBrT/t4wXl/eF07Qm/0JNN5vN8fr5YIFLk/mfYgXLfPStx//AvzZh1hT
+        zld1dgedGPUvYwD1qAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnPrint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAATNJREFUOE+t
+        lbENwjAQRV0gsQE9HR0LUNDRUFDSgcQCFJQwBotQMgAbMAAFE9DRwH+OD8WJgyNIpCdxvn8/tuMzbrad
+        f9AzEEuxFqsMaNAOIo8ocG4hHuIubhnQoF1EHlFQvBHhVAwzoEG7jDyioDDk7cPyeAo0QVs31NMLsDeI
+        RiHuN0AODVpqfH3wchtxEmdxFU9xCfE30KClhhgPvPzGvjoCr2QiB0tlhlCdUBS0ZSc4s3wYTMu5KGgL
+        xwUj9q+TGX4jOfgPtQGWcBSHDGhSJ8SfpfIAX5ANH4t9A+TQoC3X4uXfRMKand98PdrQjkYVctZ61FDL
+        b7x8K5EEjoMZ0lrEKciZIbHV9z9NHfrQLgeWQ49yLFKQsyVnbxu7vpjFpAFyra6vzi9YlsEsf/wLmLs3
+        VdIkTkcrAtYAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

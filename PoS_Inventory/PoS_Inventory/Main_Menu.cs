@@ -15,6 +15,7 @@ namespace PoS_Inventory
     {
         Products inv = new Products();
         PoS point_of_sales = new PoS();
+        addEmployee add = new addEmployee();
         public static string role;
 
         public Main_Menu(string role)
@@ -23,55 +24,39 @@ namespace PoS_Inventory
             if (role == "Admin")
             {
                 lblRole.Text = "Administrator";
-                label1.Visible = true;
-                pictureBox2.Visible = true;
+                btnInv.Visible = true;
+                btnPos.Visible = true;
+                btnAdd.Visible = true;
             }
             else if (role == "Employee")
             {
                 lblRole.Text = "Employee";
-                label1.Visible = false;
-                pictureBox2.Visible = false;
+                btnInv.Visible = false;
+                btnPos.Visible = true;
+                btnAdd.Visible = false;
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            inv.Show();
+            Application.Exit();
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            inv.Show();
-        }
-
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            inv.Show();
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
             point_of_sales.Show();
         }
 
-        private void pos_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            point_of_sales.Show();
+            inv.Show();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            add.Show();
         }
     }
 }

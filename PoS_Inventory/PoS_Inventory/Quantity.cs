@@ -51,7 +51,7 @@ namespace PoS_Inventory
             cm.Parameters.AddWithValue("@pcode", pcode);
             cm.Parameters.AddWithValue("@price", price);
             cm.Parameters.AddWithValue("@qty", int.Parse(txtQuantity.Text));
-            cm.Parameters.AddWithValue("@sdate", DateTime.Now);
+            cm.Parameters.AddWithValue("@sdate", DateTime.Now.ToString("yyyy-MM-dd"));
             cm.ExecuteNonQuery();
             cn.Close();
             frmpos.txtSearch.Focus();

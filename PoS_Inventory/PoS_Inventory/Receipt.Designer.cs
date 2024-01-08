@@ -33,7 +33,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblChange = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbltransNum = new System.Windows.Forms.Label();
@@ -43,12 +45,15 @@
             this.lblVatable = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
-            this.lblDiscount = new System.Windows.Forms.Label();
+            this.lblCash = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblVAT = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -90,7 +95,9 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.listBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblChange);
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.lblTotalPrice);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lbltransNum);
@@ -100,30 +107,53 @@
             this.panel1.Controls.Add(this.lblVatable);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label);
-            this.panel1.Controls.Add(this.lblDiscount);
+            this.panel1.Controls.Add(this.lblCash);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.lblVAT);
             this.panel1.Location = new System.Drawing.Point(26, 94);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(714, 734);
+            this.panel1.Size = new System.Drawing.Size(714, 767);
             this.panel1.TabIndex = 2;
             // 
-            // listBox1
+            // label1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(0, 74);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(714, 504);
-            this.listBox1.TabIndex = 52;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 619);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 30);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Change:";
+            // 
+            // lblChange
+            // 
+            this.lblChange.AutoSize = true;
+            this.lblChange.BackColor = System.Drawing.Color.Transparent;
+            this.lblChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChange.Location = new System.Drawing.Point(652, 622);
+            this.lblChange.Name = "lblChange";
+            this.lblChange.Size = new System.Drawing.Size(58, 26);
+            this.lblChange.TabIndex = 53;
+            this.lblChange.Text = "0.00";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 74);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(699, 499);
+            this.dataGridView1.TabIndex = 51;
             // 
             // lblTotalPrice
             // 
             this.lblTotalPrice.AutoSize = true;
             this.lblTotalPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPrice.Location = new System.Drawing.Point(652, 700);
+            this.lblTotalPrice.Location = new System.Drawing.Point(652, 731);
             this.lblTotalPrice.Name = "lblTotalPrice";
             this.lblTotalPrice.Size = new System.Drawing.Size(58, 26);
             this.lblTotalPrice.TabIndex = 50;
@@ -134,7 +164,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 696);
+            this.label4.Location = new System.Drawing.Point(17, 727);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 30);
             this.label4.TabIndex = 49;
@@ -189,7 +219,7 @@
             this.lblVatable.AutoSize = true;
             this.lblVatable.BackColor = System.Drawing.Color.Transparent;
             this.lblVatable.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVatable.Location = new System.Drawing.Point(652, 665);
+            this.lblVatable.Location = new System.Drawing.Point(652, 696);
             this.lblVatable.Name = "lblVatable";
             this.lblVatable.Size = new System.Drawing.Size(58, 26);
             this.lblVatable.TabIndex = 46;
@@ -200,7 +230,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 661);
+            this.label3.Location = new System.Drawing.Point(17, 692);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 30);
             this.label3.TabIndex = 45;
@@ -213,27 +243,27 @@
             this.label.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(17, 586);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(96, 30);
+            this.label.Size = new System.Drawing.Size(63, 30);
             this.label.TabIndex = 41;
-            this.label.Text = "Discount:";
+            this.label.Text = "Cash:";
             // 
-            // lblDiscount
+            // lblCash
             // 
-            this.lblDiscount.AutoSize = true;
-            this.lblDiscount.BackColor = System.Drawing.Color.Transparent;
-            this.lblDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscount.Location = new System.Drawing.Point(652, 590);
-            this.lblDiscount.Name = "lblDiscount";
-            this.lblDiscount.Size = new System.Drawing.Size(58, 26);
-            this.lblDiscount.TabIndex = 42;
-            this.lblDiscount.Text = "0.00";
+            this.lblCash.AutoSize = true;
+            this.lblCash.BackColor = System.Drawing.Color.Transparent;
+            this.lblCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCash.Location = new System.Drawing.Point(652, 590);
+            this.lblCash.Name = "lblCash";
+            this.lblCash.Size = new System.Drawing.Size(58, 26);
+            this.lblCash.TabIndex = 42;
+            this.lblCash.Text = "0.00";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(17, 624);
+            this.label10.Location = new System.Drawing.Point(17, 655);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 30);
             this.label10.TabIndex = 43;
@@ -244,18 +274,62 @@
             this.lblVAT.AutoSize = true;
             this.lblVAT.BackColor = System.Drawing.Color.Transparent;
             this.lblVAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVAT.Location = new System.Drawing.Point(652, 627);
+            this.lblVAT.Location = new System.Drawing.Point(652, 658);
             this.lblVAT.Name = "lblVAT";
             this.lblVAT.Size = new System.Drawing.Size(58, 26);
             this.lblVAT.TabIndex = 44;
             this.lblVAT.Text = "0.00";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(182)))), ((int)(((byte)(249)))));
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(182)))), ((int)(((byte)(249)))));
+            this.btnSave.FlatAppearance.BorderSize = 2;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(99)))), ((int)(((byte)(162)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(397, 867);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(110, 42);
+            this.btnSave.TabIndex = 12;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(182)))), ((int)(((byte)(249)))));
+            this.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(182)))), ((int)(((byte)(249)))));
+            this.btnPrint.FlatAppearance.BorderSize = 2;
+            this.btnPrint.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(99)))), ((int)(((byte)(162)))));
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrint.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(630, 867);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(110, 42);
+            this.btnPrint.TabIndex = 11;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // Receipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(220)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(752, 829);
+            this.ClientSize = new System.Drawing.Size(752, 933);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -267,6 +341,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -286,9 +361,13 @@
         public System.Windows.Forms.Label lbltransNum;
         public System.Windows.Forms.Label lblDate;
         public System.Windows.Forms.Label lblVatable;
-        public System.Windows.Forms.Label lblDiscount;
+        public System.Windows.Forms.Label lblCash;
         public System.Windows.Forms.Label lblVAT;
         public System.Windows.Forms.Label lblTotalPrice;
-        public System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lblChange;
     }
 }

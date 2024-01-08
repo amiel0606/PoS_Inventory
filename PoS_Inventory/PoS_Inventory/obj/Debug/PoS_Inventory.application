@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="PoS_Inventory.exe.manifest" size="5952">
+    <dependentAssembly dependencyType="install" codebase="PoS_Inventory.exe.manifest" size="60635">
       <assemblyIdentity name="PoS_Inventory.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KaOD7DbLQW3pFfJ23n32sBmMsT5cGSM11yNhr9x4pnI=</dsig:DigestValue>
+        <dsig:DigestValue>APJppOGxIdjxOtfRh5utIyHsG/DoBQE8Sl+Uo1hIJH0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

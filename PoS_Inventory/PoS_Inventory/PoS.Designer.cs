@@ -48,11 +48,17 @@
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Data = new System.Windows.Forms.Label();
-            this.label = new System.Windows.Forms.Label();
-            this.lblDiscount = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblVAT = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.disc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.lbltransNum = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -63,14 +69,6 @@
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.disc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -86,8 +84,6 @@
             this.panel1.Controls.Add(this.lblTotalPrice);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.Data);
-            this.panel1.Controls.Add(this.label);
-            this.panel1.Controls.Add(this.lblDiscount);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.lblVAT);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -182,28 +178,6 @@
             this.Data.TabIndex = 14;
             this.Data.Text = "Date";
             // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(182)))), ((int)(((byte)(249)))));
-            this.label.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(12, 14);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(96, 30);
-            this.label.TabIndex = 31;
-            this.label.Text = "Discount:";
-            // 
-            // lblDiscount
-            // 
-            this.lblDiscount.AutoSize = true;
-            this.lblDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(182)))), ((int)(((byte)(249)))));
-            this.lblDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscount.Location = new System.Drawing.Point(159, 17);
-            this.lblDiscount.Name = "lblDiscount";
-            this.lblDiscount.Size = new System.Drawing.Size(58, 26);
-            this.lblDiscount.TabIndex = 32;
-            this.lblDiscount.Text = "0.00";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -287,6 +261,88 @@
             this.dataGridView1.Size = new System.Drawing.Size(1318, 460);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // id
+            // 
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.id.DefaultCellStyle = dataGridViewCellStyle14;
+            this.id.HeaderText = "#";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.Width = 30;
+            // 
+            // pcode
+            // 
+            this.pcode.HeaderText = " Product Code";
+            this.pcode.Name = "pcode";
+            this.pcode.ReadOnly = true;
+            // 
+            // desc
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desc.DefaultCellStyle = dataGridViewCellStyle15;
+            this.desc.HeaderText = "Description";
+            this.desc.MinimumWidth = 6;
+            this.desc.Name = "desc";
+            this.desc.ReadOnly = true;
+            this.desc.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.desc.Width = 600;
+            // 
+            // price
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.DefaultCellStyle = dataGridViewCellStyle16;
+            this.price.FillWeight = 125F;
+            this.price.HeaderText = "Price";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            // 
+            // quantity
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantity.DefaultCellStyle = dataGridViewCellStyle17;
+            this.quantity.HeaderText = "Qty";
+            this.quantity.MinimumWidth = 6;
+            this.quantity.Name = "quantity";
+            this.quantity.ReadOnly = true;
+            this.quantity.Width = 125;
+            // 
+            // disc
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disc.DefaultCellStyle = dataGridViewCellStyle18;
+            this.disc.HeaderText = "Discount";
+            this.disc.MinimumWidth = 6;
+            this.disc.Name = "disc";
+            this.disc.ReadOnly = true;
+            this.disc.Width = 150;
+            // 
+            // total
+            // 
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total.DefaultCellStyle = dataGridViewCellStyle19;
+            this.total.HeaderText = "Total";
+            this.total.MinimumWidth = 6;
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
+            this.total.Width = 120;
+            // 
+            // delete
+            // 
+            this.delete.HeaderText = "";
+            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.delete.Width = 50;
             // 
             // lbltransNum
             // 
@@ -469,88 +525,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "                 ";
             // 
-            // id
-            // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.id.DefaultCellStyle = dataGridViewCellStyle14;
-            this.id.HeaderText = "#";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.Width = 30;
-            // 
-            // pcode
-            // 
-            this.pcode.HeaderText = " Product Code";
-            this.pcode.Name = "pcode";
-            this.pcode.ReadOnly = true;
-            // 
-            // desc
-            // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.desc.DefaultCellStyle = dataGridViewCellStyle15;
-            this.desc.HeaderText = "Description";
-            this.desc.MinimumWidth = 6;
-            this.desc.Name = "desc";
-            this.desc.ReadOnly = true;
-            this.desc.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.desc.Width = 600;
-            // 
-            // price
-            // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.price.DefaultCellStyle = dataGridViewCellStyle16;
-            this.price.FillWeight = 125F;
-            this.price.HeaderText = "Price";
-            this.price.MinimumWidth = 6;
-            this.price.Name = "price";
-            this.price.ReadOnly = true;
-            // 
-            // quantity
-            // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantity.DefaultCellStyle = dataGridViewCellStyle17;
-            this.quantity.HeaderText = "Qty";
-            this.quantity.MinimumWidth = 6;
-            this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
-            this.quantity.Width = 125;
-            // 
-            // disc
-            // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disc.DefaultCellStyle = dataGridViewCellStyle18;
-            this.disc.HeaderText = "Discount";
-            this.disc.MinimumWidth = 6;
-            this.disc.Name = "disc";
-            this.disc.ReadOnly = true;
-            this.disc.Width = 150;
-            // 
-            // total
-            // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total.DefaultCellStyle = dataGridViewCellStyle19;
-            this.total.HeaderText = "Total";
-            this.total.MinimumWidth = 6;
-            this.total.Name = "total";
-            this.total.ReadOnly = true;
-            this.total.Width = 120;
-            // 
-            // delete
-            // 
-            this.delete.HeaderText = "";
-            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Width = 50;
-            // 
             // PoS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -590,8 +564,6 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label Data;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblDiscount;
-        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label lblVAT;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;

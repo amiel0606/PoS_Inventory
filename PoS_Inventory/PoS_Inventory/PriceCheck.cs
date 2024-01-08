@@ -32,24 +32,14 @@ namespace PoS_Inventory
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             SearchRecords();
-            //t = new System.Timers.Timer();
-            //t.Interval = 3000;
-            //t.Elapsed += OnTimeEvent;
-            //t.Start();
-        }
 
-        /* private void OnTimeEvent(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            Invoke(new Action(() =>
-            {
-                Clear();
-            }));
-        } */
+        }
 
         public void SearchRecords()
         {
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tblBarcode WHERE barcode like '" + txtSearch.Text + "'", cn);
+            cm = new SqlCommand("SELECT * FROM tblBarcode WHERE barcode LIKE @barcode", cn);
+            cm.Parameters.AddWithValue("@barcode", txtSearch.Text + "%");
             SqlDataReader dr = cm.ExecuteReader();
             while (dr.Read())
             {
@@ -69,7 +59,6 @@ namespace PoS_Inventory
             lblPrice.Text = "";
             txtSearch.Focus();
             txtSearch.Clear();
-            //t.Stop();
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {

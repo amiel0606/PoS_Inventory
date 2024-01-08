@@ -48,7 +48,8 @@ namespace PoS_Inventory
             int i = 0;
             dataGridView1.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tblBarcode WHERE barcode like '" + txtSearch.Text + "%' OR description like '" + txtSearch.Text + "%' OR brandName like '" + txtSearch.Text + "%' ORDER BY quantity", cn);
+            cm = new SqlCommand("SELECT * FROM tblBarcode WHERE barcode LIKE @searchText OR description LIKE @searchText OR brandName LIKE @searchText ORDER BY quantity", cn);
+            cm.Parameters.AddWithValue("@searchText", txtSearch.Text + "%");
             SqlDataReader dr = cm.ExecuteReader();
             while (dr.Read())
             {
